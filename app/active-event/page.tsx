@@ -127,6 +127,9 @@ export default function ActiveEventPage() {
 						<Link href="#kontak" className="btn-secondary text-base px-8 py-4">
 							Hubungi Tim Kemitraan Kami
 						</Link>
+						<a href="#kontak" className="btn-secondary text-base px-8 py-4">
+							Lihat Proposal Event →
+						</a>
 					</div>
 					<img
 						src="/img/logo-event.png"
