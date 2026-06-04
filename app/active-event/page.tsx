@@ -134,7 +134,7 @@ export default function ActiveEventPage() {
 					<img
 						src="/img/logo-event.png"
 						alt="tiga dua"
-						className="relative z-20 mx-auto mt-10 bg-white rounded-full"
+						className="relative size-20 z-20 mx-auto mt-10 bg-white rounded-full"
 					/>
 				</div>
 			</section>
