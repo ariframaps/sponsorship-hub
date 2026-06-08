@@ -127,7 +127,7 @@ export default function ActiveEventPage() {
 						<Link href="#kontak" className="btn-secondary text-base px-8 py-4">
 							Hubungi Tim Kemitraan Kami
 						</Link>
-						<a href="#kontak" className="btn-secondary text-base px-8 py-4">
+						<a href="#proposal" className="btn-secondary text-base px-8 py-4">
 							Lihat Proposal Event →
 						</a>
 					</div>
@@ -143,6 +143,49 @@ export default function ActiveEventPage() {
           EVENT OVERVIEW STATS
       ═══════════════════════════════════════════════ */}
 			<section className="py-12 border-y border-white/5">
+				<div className="overflow-hidden py-3 md:py-5 bg-white mt-12">
+					<div className="marquee-track whitespace-nowrap">
+						{[
+							{ name: "Telkom", imgSrc: "/logo/telkom.png" },
+							{ name: "Sosro", imgSrc: "/logo/sosro.png" },
+							{ name: "Japfa Food", imgSrc: "/logo/japfa.png" },
+							{ name: "Aslah", imgSrc: "/logo/aslah.png" },
+							{ name: "Hisana", imgSrc: "/logo/hisana.png" },
+							{ name: "Telkom", imgSrc: "/logo/telkom.png" },
+							{ name: "Sosro", imgSrc: "/logo/sosro.png" },
+							{ name: "Japfa Food", imgSrc: "/logo/japfa.png" },
+							{ name: "Aslah", imgSrc: "/logo/aslah.png" },
+							{ name: "Hisana", imgSrc: "/logo/hisana.png" },
+							{ name: "Telkom", imgSrc: "/logo/telkom.png" },
+							{ name: "Sosro", imgSrc: "/logo/sosro.png" },
+							{ name: "Japfa Food", imgSrc: "/logo/japfa.png" },
+							{ name: "Aslah", imgSrc: "/logo/aslah.png" },
+							{ name: "Hisana", imgSrc: "/logo/hisana.png" },
+							{ name: "Telkom", imgSrc: "/logo/telkom.png" },
+							{ name: "Sosro", imgSrc: "/logo/sosro.png" },
+							{ name: "Japfa Food", imgSrc: "/logo/japfa.png" },
+							{ name: "Aslah", imgSrc: "/logo/aslah.png" },
+							{ name: "Hisana", imgSrc: "/logo/hisana.png" },
+							{ name: "Telkom", imgSrc: "/logo/telkom.png" },
+							{ name: "Sosro", imgSrc: "/logo/sosro.png" },
+							{ name: "Japfa Food", imgSrc: "/logo/japfa.png" },
+							{ name: "Aslah", imgSrc: "/logo/aslah.png" },
+							{ name: "Hisana", imgSrc: "/logo/hisana.png" },
+						].map((brand, i) => (
+							<span
+								key={i}
+								className="inline-flex items-center gap-6 mx-8 text-white/20 text-sm font-mono tracking-wider">
+								<span className="w-1 h-1 rounded-full bg-amber-400/30 inline-block" />
+								<img
+									className="h-12 md:h-16"
+									src={brand.imgSrc}
+									alt={brand.name}
+								/>
+							</span>
+						))}
+					</div>
+				</div>
+
 				<div className="max-w-7xl mx-auto px-6">
 					<div className="grid grid-cols-2 md:grid-cols-4 gap-6">
 						{[
@@ -549,7 +592,9 @@ export default function ActiveEventPage() {
 					</div>
 				</div>
 
-				<div className="overflow-hidden py-3 md:py-5 bg-white mt-12">
+				<div
+					id="sponsorship"
+					className="overflow-hidden py-3 md:py-5 bg-white mt-12">
 					<div className="marquee-track whitespace-nowrap">
 						{[
 							{ name: "Telkom", imgSrc: "/logo/telkom.png" },
@@ -596,9 +641,7 @@ export default function ActiveEventPage() {
 			{/* ═══════════════════════════════════════════════
           SPONSORSHIP PACKAGES
       ═══════════════════════════════════════════════ */}
-			<section
-				id="sponsorship"
-				className="py-24 pt-10 relative overflow-hidden">
+			<section className="py-24 pt-10 relative overflow-hidden">
 				<div className="absolute inset-0 grid-pattern opacity-20" />
 
 				<div className="absolute inset-0 opacity-60">
@@ -784,7 +827,7 @@ export default function ActiveEventPage() {
 			{/* ═══════════════════════════════════════════════
           WHY SPONSOR (Event version)
       ═══════════════════════════════════════════════ */}
-			<section className="py-16 border-t border-white/5">
+			<section className="pt-16 border-t border-white/5">
 				<div className="max-w-7xl mx-auto px-6">
 					<div className="grid md:grid-cols-3 gap-6">
 						{[
@@ -819,7 +862,7 @@ export default function ActiveEventPage() {
 			</section>
 
 			{/* Downloads section */}
-			<section className="py-12 border-t border-white/5">
+			<section id="proposal" className="pt-28 pb-12 border-t border-white/5">
 				<div className="max-w-7xl mx-auto px-6">
 					<div className="card-glass rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-6">
 						<div>
