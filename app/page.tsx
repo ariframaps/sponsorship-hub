@@ -108,7 +108,7 @@ export default function Home() {
 						{ name: "Jawa Pos", imgSrc: "/logo/jawa-pos.png" },
 						{ name: "Antangin", imgSrc: "/logo/antangin.png" },
 						{ name: "IndiHome", imgSrc: "/logo/indihome.png" },
-						{ name: "Japfa Comfeed", imgSrc: "/logo/japfa.png" },
+						{ name: "Japfa Food", imgSrc: "/logo/japfa.png" },
 						{
 							name: "Gudang Garam Surya",
 							imgSrc: "/logo/gudang-garam.png",
@@ -500,7 +500,8 @@ export default function Home() {
 					<p className="text-white/50 text-lg mb-10 max-w-2xl mx-auto">
 						Jelajahi peluang sponsorship aktif dalam program komunitas
 						beraudiens tinggi. Bergabunglah bersama brand-brand terpercaya yang
-						telah lebih dahulu menjangkau komunitas Taman Suko Asri secara langsung.
+						telah lebih dahulu menjangkau komunitas Taman Suko Asri secara
+						langsung.
 					</p>
 					<div className="flex flex-col sm:flex-row gap-4 justify-center">
 						<Link
