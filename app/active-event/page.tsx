@@ -539,7 +539,7 @@ export default function ActiveEventPage() {
 						</p>
 					</div>
 
-					<div className={"flex items-start gap-5"}>
+					<div className={"flex flex-col lg:flex-row items-start gap-5"}>
 						<h3 className={"text-amber-400 tracking-wides text-2xl font-bold shrink-0"}>23 Agustus</h3>
 
 					<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
@@ -583,7 +583,7 @@ export default function ActiveEventPage() {
 					</div>
 					</div>
 
-					<div className={"flex items-start gap-5 pt-5 border-t border-amber-400/30"}>
+					<div className={"flex flex-col lg:flex-row items-start gap-5 pt-5 border-t border-amber-400/30"}>
 
 						<h3 className={"text-amber-400 tracking-wides text-2xl font-bold shrink-0"}>29 Agustus</h3>
 					<div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
