@@ -151,12 +151,24 @@ export const activeEvent = {
 		},
 		{
 			phase: "Fase III",
+			title: "Bazar & Jalan Sehat",
+			period: "23 Agustus 2026",
+			desc: "Bazar & jalan Sehat. Kepadatan pengunjung maksimum dengan integrasi seluruh elemen event.",
+			activities: [
+				"Bazar UMKM",
+				"Jalan Sehat dengan Grup Patrol",
+				"Doorprize",
+				"Senam Bersama",
+				"Lomba Grup Senam",
+				"Electone",
+			],
+		},
+		{
+			phase: "Fase IV",
 			title: "Grand Finale & Puncak Acara",
 			period: "29 Agustus 2026",
 			desc: "Hari visibilitas tertinggi sepanjang program. Kepadatan pengunjung maksimum dengan integrasi seluruh elemen event.",
 			activities: [
-				"Bazar UMKM",
-				"Jalan Sehat & Senam Massal",
 				"Pentas Seni & Hiburan Panggung",
 				"Pengumuman & Pembagian Hadiah",
 			],

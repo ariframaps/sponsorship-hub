@@ -186,7 +186,7 @@ export default function ActiveEventPage() {
 					</div>
 				</div>
 
-				<div className="max-w-7xl mx-auto px-6">
+				<div className="max-w-7xl mx-auto px-6 mt-5">
 					<div className="grid grid-cols-2 md:grid-cols-4 gap-6">
 						{[
 							{
@@ -289,8 +289,8 @@ export default function ActiveEventPage() {
 								},
 								{
 									icon: "🎪",
-									label: "Grand Finale",
-									value: "29 Agustus 2026  Bazar, Senam Massal, Pentas Seni",
+									label: "Dengann 2 Acara Besar",
+									value: "23 dan 	29 Agustus 2026  Bazar, Senam Massal, Pentas Seni",
 								},
 								{
 									icon: "🤝",
@@ -348,7 +348,7 @@ export default function ActiveEventPage() {
 												<div className="text-xs text-amber-400/70 font-mono">
 													{phase.phase}
 												</div>
-												{i === 2 && (
+												{(i === 3 || i === 2) && (
 													<div className="flex items-center gap-1 text-[10px] text-red-400">
 														<span className="pulse-dot" />
 														Highlight Utama
@@ -374,7 +374,7 @@ export default function ActiveEventPage() {
 												<span
 													key={activity}
 													className={`px-3 py-1.5 rounded-lg text-xs border ${
-														i === 2
+															(i === 2 || i === 3)
 															? "bg-amber-400/10 border-amber-400/20 text-amber-300"
 															: "bg-white/4 border-white/8 text-white/60"
 													}`}>
@@ -530,7 +530,7 @@ export default function ActiveEventPage() {
 						<h2 className="section-title text-white mb-4">
 							Grand Finale
 							<br />
-							<span className="text-amber-400">29 Agustus 2026</span>
+							<span className="text-amber-400">23 & 29 Agustus 2026</span>
 						</h2>
 						<p className="text-white/40 max-w-xl mx-auto">
 							Hari dengan kepadatan audiens tertinggi sepanjang program. Momen
@@ -539,7 +539,10 @@ export default function ActiveEventPage() {
 						</p>
 					</div>
 
-					<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+					<div className={"flex items-start gap-5"}>
+						<h3 className={"text-amber-400 tracking-wides text-2xl font-bold shrink-0"}>23 Agustus</h3>
+
+					<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
 						{[
 							{
 								icon: "🛍️",
@@ -548,9 +551,45 @@ export default function ActiveEventPage() {
 							},
 							{
 								icon: "🏃",
-								title: "Jalan Sehat & Senam Massal",
+								title: "Jalan Sehat Dengan Grup Patrol",
 								desc: "Kegiatan partisipasi massal yang menggerakkan seluruh audiens keluar rumah. Eksposur brand di titik paling terbuka.",
 							},
+							{
+								icon: "🏃",
+								title: "Senam Bersama",
+								desc: "Kegiatan partisipasi massal yang menggerakkan seluruh audiens keluar rumah. Eksposur brand di titik paling terbuka.",
+							},
+							{
+								icon: "🏃",
+								title: "Lomba Grup Senam",
+								desc: "Kegiatan partisipasi massal yang menggerakkan seluruh audiens keluar rumah. Eksposur brand di titik paling terbuka.",
+							},
+
+						].map((item) => (
+							<div
+								key={item.title}
+								className="card-glass rounded-2xl p-6 text-center hover:border-amber-400/20 transition-all group">
+								<div className="text-4xl mb-4 group-hover:scale-110 transition-transform">
+									{item.icon}
+								</div>
+								<h3 className="font-display text-xl font-bold text-white mb-2">
+									{item.title}
+								</h3>
+								<p className="text-sm text-white/40 leading-relaxed">
+									{item.desc}
+								</p>
+							</div>
+						))}
+					</div>
+					</div>
+
+					<div className={"flex items-start gap-5 pt-5 border-t border-amber-400/30"}>
+
+						<h3 className={"text-amber-400 tracking-wides text-2xl font-bold shrink-0"}>29 Agustus</h3>
+					<div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
+					</div>
+						{[
+
 							{
 								icon: "🎭",
 								title: "Pentas Seni & Hiburan",
